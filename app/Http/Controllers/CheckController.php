@@ -42,5 +42,6 @@ class CheckController extends Controller
    $json_response = postJSON($data);
    header('Content-type: application/json');
    echo $json_response;
+   $this->save($json_response);
 
 }

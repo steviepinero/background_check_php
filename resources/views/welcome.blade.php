@@ -31,7 +31,11 @@ function postJSON($data){
        $json_response = postJSON($data);
        header('Content-type: application/json');
        echo $json_response;
+      //  $this->save($json_response); <~~~ will save the data but display the html as plain text, moved logic into controller. Need to figure out how to call the controller. Still very new to php.
        ///////////////////////////////////////////////////
+       //TODO save the response to Postgresql database
+
+
 ?>
 
  <!-- curl -d
@@ -132,7 +136,7 @@ text-decoration: none;
                 <form action="">
                 <input type="text" name="location" value="">
               <button type="submit">submit </button> </form>
-              <!-- <#?php echo $json_response; ?> -->
+
             </div>
         </div>
     </body>

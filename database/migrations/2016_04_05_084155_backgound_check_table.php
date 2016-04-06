@@ -19,6 +19,7 @@ class BackgoundCheckTable extends Migration
             $table->string('lastname');
             $table->string('limit');
             $table->timestamps();
+            $table->string('json');
         });
     }
 
